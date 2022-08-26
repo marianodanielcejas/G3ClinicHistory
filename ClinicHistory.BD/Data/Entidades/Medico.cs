@@ -22,5 +22,8 @@ namespace ClinicHistory.BD.Data.Entidades
         public List<HistoriaClinica> HistoriasClinicas { get; set; }
         public List<Paciente> Pacientes { get; set; }
         public List<Matricula> Matriculas { get; set; }
+
+
+        public string NumTele { get; set; }
     }
 }
