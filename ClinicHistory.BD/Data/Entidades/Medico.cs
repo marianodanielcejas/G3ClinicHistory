@@ -12,14 +12,15 @@ namespace ClinicHistory.BD.Data.Entidades
     public class Medico:EntityBase
     {
         [Required(ErrorMessage = "Campo obligatorio")]
-        [MaxLength(150, ErrorMessage = "El nombre no puede superar los {1} caracteres")]
-        public string nombre { get; set; }
+        [MaxLength(30, ErrorMessage = "Este dato no puede superar los {1} caracteres")]
+        public string NombreCompleto { get; set; }
+
         [Required(ErrorMessage = "Campo obligatorio")]
-        [MaxLength(8, ErrorMessage = "El DNI no puede superar los {1} caracteres")]
+        [MaxLength(8, ErrorMessage = "Este dato no puede superar los {1} caracteres")]
         public string DNI { get; set; }
 
-        public List <HistoriaClinicaPaciente> HistoriasClinicas { get; set; }
-
+        public List<HistoriaClinica> HistoriasClinicas { get; set; }
+        public List<Paciente> Pacientes { get; set; }
         public List<Matricula> Matriculas { get; set; }
     }
 }

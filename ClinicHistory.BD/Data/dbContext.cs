@@ -12,7 +12,9 @@ namespace ClinicHistory.BD.Data
     public class dbContext : DbContext
     {
         //Creacion de la tabla Historias Clinicas que se rige bajo el modelo HistoriaClinicaPaciente. 
-        public DbSet<HistoriaClinicaPaciente> HistoriasClinicas { get; set ;}
+        public DbSet<HistoriaClinica> HistoriasClinicas { get; set ;}
+
+        public DbSet<Paciente> Pacientes { get; set; }
 
         public DbSet<Medico> Medicos { get; set; }
 
@@ -20,9 +22,15 @@ namespace ClinicHistory.BD.Data
 
         public DbSet<Paramedico> Paramedicos { get; set; }
 
-        public DbSet<Clinica> Clinicas { get; set; }
+        public DbSet<SalaEmergencia> SalasDeEmergencias { get; set; }
 
         public DbSet<Especialidad> Especialidades { get; set; }
+
+        public DbSet<InformeMedico> InformesMedicos { get; set; }
+
+        public DbSet<Ambulancia> Ambulancias { get; set; }
+
+
 
 
         //Constructor de la clase dbContext que recibe una variable options y se lo debe pasar a la clase base que es DbContext.

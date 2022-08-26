@@ -12,18 +12,16 @@ namespace ClinicHistory.BD.Data.Entidades
         [Required(ErrorMessage = "Campo obligatorio")]
         [MaxLength(50, ErrorMessage = "El numero de matricula no puede superar los {1} caracteres")]
         public int numeroMatric { get; set; }
-        [Required(ErrorMessage = "Campo obligatorio")]
-        [MaxLength(150, ErrorMessage = "El nombre del medico no puede superar los {1} caracteres")]
-        public string nombreMedico { get; set; }
 
-        [Required(ErrorMessage = "Campo obligatorio")]
-        [MaxLength(8, ErrorMessage = "El DNI no puede superar los {1} caracteres")]
-        
-        public string DNI { get; set; }
+        [Required(ErrorMessage = "El Médico es obligatorio")]
+        public int MedicoId { get; set; }
 
-        [Required(ErrorMessage = "Campo obligatorio")]
-        [MaxLength(50, ErrorMessage = "La especialidad no puede superar los {1} caracteres")]
-        public string Especialidad { get; set; }
-        
+        public Medico Medico { get; set; }
+
+        [Required(ErrorMessage = "La Especialidad es obligatoria")]
+
+        public int EspecialidadId { get; set; }
+
+        public Especialidad Especialidad { get; set; }
     }
 }
