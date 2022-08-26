@@ -25,5 +25,6 @@ namespace ClinicHistory.BD.Data.Entidades
 
 
         public string NumTele { get; set; }
+        public string  firu { get; set; }
     }
 }
