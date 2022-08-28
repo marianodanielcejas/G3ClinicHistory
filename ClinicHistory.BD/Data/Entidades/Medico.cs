@@ -24,7 +24,6 @@ namespace ClinicHistory.BD.Data.Entidades
         public List<Matricula> Matriculas { get; set; }
 
 
-        public string NumTele { get; set; }
-        public string  firu { get; set; }
+        
     }
 }
