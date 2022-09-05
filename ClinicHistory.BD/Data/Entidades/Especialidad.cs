@@ -16,5 +16,8 @@ namespace ClinicHistory.BD.Data.Entidades
         public string NomEsp { get; set; }
 
         public List<Matricula> Matriculas { get; set; }
+        public List<Paramedico> paramedicos { get; set; }   
+
+        
     }
 }

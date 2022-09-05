@@ -32,5 +32,8 @@ namespace ClinicHistory.BD.Data.Entidades
 
         public Ambulancia Ambulancia { get; set; }
 
+        public List<HistoriaClinica> historiasclinicas { get; set; }    
+
+
     }
 }
