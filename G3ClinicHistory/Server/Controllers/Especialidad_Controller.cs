@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace G3ClinicHistory.Server.Controllers
 {
 
+    //Cande
     //Api Especialidad
     [ApiController]
 
