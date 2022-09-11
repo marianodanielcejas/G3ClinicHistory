@@ -12,7 +12,7 @@ namespace ClinicHistory.BD.Data
     public class dbContext : DbContext
     {
         //Creacion de la tabla Historias Clinicas que se rige bajo el modelo HistoriaClinicaPaciente. 
-        public DbSet<HistoriaClinica> HistoriasClinicas { get; set ;}
+        public DbSet<HistoriaClinicaPaciente> HistoriasClinicas { get; set ;}
 
         public DbSet<Paciente> Pacientes { get; set; }
 

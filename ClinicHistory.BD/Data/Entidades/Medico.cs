@@ -19,7 +19,7 @@ namespace ClinicHistory.BD.Data.Entidades
         [MaxLength(8, ErrorMessage = "Este dato no puede superar los {1} caracteres")]
         public string DNI { get; set; }
 
-        public List<HistoriaClinica> HistoriasClinicas { get; set; }
+        public List<HistoriaClinicaPaciente> HistoriasClinicas { get; set; }
         public List<Paciente> Pacientes { get; set; }
         public List<Matricula> Matriculas { get; set; }
 

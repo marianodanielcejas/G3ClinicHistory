@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClinicHistory.BD.Data.Entidades
 {
-    public class HistoriaClinica:EntityBase
+    public class HistoriaClinicaPaciente:EntityBase
     {
         [Required(ErrorMessage ="Este campo es obligatorio")]
         [MaxLength(10, ErrorMessage = "Este dato no puede superar los {1} caracteres")]
